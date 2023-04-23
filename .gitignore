@@ -11,6 +11,13 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-*
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -19,7 +26,6 @@ pickle-email-*.html
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
-config/master.key
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
@@ -67,3 +73,17 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 /public/uploads
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
